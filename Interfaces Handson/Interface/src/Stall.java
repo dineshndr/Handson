@@ -1,0 +1,5 @@
+
+interface Stall {
+		void display();
+}
+
