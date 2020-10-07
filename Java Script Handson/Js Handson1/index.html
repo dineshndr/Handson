@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;   
+        }
+        #resTab,th,tr,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        div{
+            text-align: center;
+            padding: 26px;
+        }
+        button{
+            border-radius: 15px;
+        }
+        #result{
+            display: flex;
+            justify-content: center;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Validating The duplicate Elements</h1>
+        Enter the Event Name : <input type="text" id="input1">
+        <br>
+        <button onclick="addEvent()">Add Event</button>
+        <button onclick="display()">Display Events</button>
+    </div>
+    <div id="successMessage">
+    </div>
+    <div id=result>
+        <table id="resTab"></table>
+    </div>
+</body>
+</html>

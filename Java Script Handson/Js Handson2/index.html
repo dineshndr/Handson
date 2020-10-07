@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js">defer</script>
+    <style>
+        #ui{
+            padding: 25px;
+            text-align: center;
+        }
+        #resultList{ 
+            display: inline-block;
+            list-style-position: inside;
+       }
+        button{
+            margin: 15px;
+            border-radius:7px;    
+        }
+       #result{
+         align-items: center;
+         display: flex;
+         justify-content: center;
+         
+       }
+    </style>
+</head>
+<body>
+    <div id="ui">
+        <h1>Validating The duplicate Elements</h1>
+        Enter the Event Name : <input type="text" id="input1">
+        <br>
+        <button onclick="addEvent()">Add Event</button>
+        <button onclick="display()">Display Events</button>
+    </div>
+    <div id="successMessage">
+    </div>
+    <div id=result>
+        <ol id="resultList"></ol>
+    </div>
+</body>
+</html>
